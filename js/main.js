@@ -1736,3 +1736,15 @@ $('button.cambioContraste').click(function(){
 });
 /**********Fin de cambio de contraste***************/
 
+/**********funcion de pasqui para formulario***************/
+
+$('.toggle').click(function(){
+    $('.formulario').animate({
+     height: "toggle",
+        'padding-top': 'toggle',
+        'padding-bottom': 'toggle',
+        opacity: 'toogle'
+    }, "slow");
+});
+
+
