@@ -1,0 +1,2675 @@
+/*************************************************************
+CSS modificado
+*************************************************************/
+.imagen_carrusel{
+     width: 120px;
+    height: 263px;
+}
+
+article.playera{
+    border: 1px solid grey;
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+.playera>img{
+    width: 120px;
+    height: 120px;
+}
+.playera>p{
+    font-weight: bold;
+}
+.page_header nav{
+    background-color: #fff;
+}
+.page_header a{
+    color:#1F87BC;
+}
+a:hover, a:focus{
+    background-color: white;
+    text-decoration: underline;
+    color:#1F87BC !important;
+    border-bottom: solid 1px #1F87BC ;
+}
+.filtro{
+    width: 20%;
+    float: left;
+    content: "";
+    margin-right: 2px;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                        Framework accesible UNAM
+
+
+
+Versión 1.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*Color y tamaño para la página en general JULIO*/
+*{
+	box-sizing:border-box;
+    font-size: 14px;
+    color: #000;
+}
+/*estilo para que los enlaces no tengan subrayado */  
+a{
+    
+    text-decoration: none;
+}
+
+.wrap{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    display: flex; 
+    }
+
+.footer{
+    width: 100%;
+    align-self: flex-end;
+    padding-top: 8px;
+    position: relative;
+    border: solid 2px black;
+}
+
+.footer> nav{
+    position: relative; 
+}
+
+
+@media only screen and (max-width: 768px) { 
+    /*----------Display para menú en float right 20% witdth--------*/
+    .nav_disp_right_footer > .lista_menu> .link {
+        display: none;
+        clear: both;
+        float: right;
+        width: 100%;
+    }
+}
+
+/*Clase exito*/
+.exito{
+    background-color: #07dd00;
+    color: #000;
+
+}
+.page_header{
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: solid #777777 2px;
+}
+.text_exito{
+color:#1c531f;
+}
+.boton_exito{
+background-color: #07dd00;
+color: #000;
+border:#186c03 solid 2px;
+}
+
+.boton_exito:focus, .boton_exito:hover{
+	outline:#06bb00  dotted 5px;
+
+}
+
+/*Color de la letra con fondo blanco*/
+
+.info{
+    background-color: #a5e6ff;
+}
+
+
+.texto_info{
+    color:#1739a9;
+}
+
+.boton_info{
+   border:#1739A9 solid 2px;
+   color:#1739A9;
+   background-color:#a5e6ff;
+
+}
+
+/*Porpiedades de los contenedores principales*/
+
+/*clases peligro*/
+
+.peligro{
+	background-color:#f00000;
+	color:white;
+}
+
+.texto_peligro{
+	background-color:white;
+	color:#f00000;
+}
+
+.boton_peligro{
+   border:#000000 solid 2px;
+   color:white;
+   background-color:#f00000;
+
+}
+
+button.peligro:focus{
+	border:#ffff00  dotted 5px;
+}
+
+/*fin clases peligro*/
+
+/*Clases alerta*/
+.alerta{
+	background: #F2D431;
+    color:black;
+}
+
+.texto_alerta{
+    color: #624700;
+}
+
+.boton_alerta{
+    background-color: #F2D431;
+    color: #000;
+    border:#c4ac27 solid 2px;
+}
+
+/*Fin clases alerta*/
+.container{ 
+    width: 100%;
+    margin: auto;
+}
+.pagina{
+    padding: 5% 10%;
+    margin: auto;
+}
+
+.boton_primaria{
+    background-color: #00FFFF;
+    color: #800080;
+    border:gray solid 2px;
+}
+
+.primaria{
+	background-color: #800080;
+	color: #ffffff;
+}
+.subrayado {
+	background-color: blue;
+}
+.primaria a{
+	
+	color: #00FFFF ;
+}
+.primaria a:hover, .primaria a:focus {
+    color: #00FFFF ;
+    outline: #00FFFF  dotted 3px;
+    text-decoration: underline;
+}
+.primaria button:focus{
+	border-style: #00FFFF dotted 3px;	
+}
+
+
+/*Estilos de imágenes*/
+	.referencia-imagen 
+		{
+		display: table-caption;
+		caption-side: bottom;
+		line-height: 1.2em;
+		font-style: italic;
+		padding: 0.1em;
+		border: gray dotted 1px;
+		text-align: left;
+		}
+
+
+
+
+/*Fin estilos imagenes*/
+
+/*Estilos Acordeon*/
+.acordeon {
+	overflow:hidden;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	border-radius:3px;
+	background:#f7f7f7;
+}
+
+
+.acordeon_titulo {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border:1px solid #1a1a1a;
+	color:#000000;
+	transition:all linear 0.15s;
+ 
+}
+
+.acordeon_titulo.active, .acordeon_titulo:hover {
+	text-decoration:none;
+}
+
+.acordeon_panel:last-child .acordeon_titulo {
+	border-bottom:none;
+}
+
+.acordeon_contenido {
+	padding:15px;
+	display:none;
+}
+.acordeon .boton:focus, .boton:hover {
+
+    text-decoration: none;
+}
+
+
+
+/*Fin estilos acordeón*/
+
+.contenido_modal{
+    display: block;
+    font-size: 18px;
+    border-bottom: solid #2874A6   1px;
+    border-top: solid #2874A6   1px;
+}
+
+.modal_overlay{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+.draggable{ 
+  overflow: hidden;
+  resize: both;
+}
+
+.aceptar:after, .aceptar:before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.aceptar{
+    float: right;
+    background-color: #2874A6;
+    color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 2px;
+    cursor: pointer;
+
+}
+.modal{
+
+    box-shadow: 10px 10px 5px #888888;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 5px;
+    width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+    z-index: 3;
+    display:none;
+    text-align: justify;
+}
+
+
+.cerrar{
+    position:absolute;
+    top:2px;
+    right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    border-color:white;
+    color:gray;
+    cursor: pointer;
+}
+
+/*Fin del modal*/
+/*Inicio Alertas*/
+.ventanaAlertas{
+    box-shadow: 10px 10px 5px #888888;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border: solid 1.5px #d1d1d1;
+    border-radius: 15px;
+    width: 370px;
+    margin: 30px auto;
+    padding: 10px;
+    z-index: 3;
+    display:none;
+    text-align:center
+}
+
+.tituloAlertas{
+    color: #595959;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: .4em .4em;
+    padding: 0;
+    display: block;
+}
+
+.contenidoAlertas{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    float: none;
+    margin: .4em .4em;
+    padding: 0;
+    line-height: normal;
+    color: #545454;
+    word-wrap: break-word;
+}
+
+.cerrarAlertas{
+    /*float: right;*/
+    background-color: #2874A6; 
+    border: 0;                  
+    border-radius: 3px;         
+    box-shadow: none;         
+    color: #fff;               
+    cursor: pointer;              
+    font-size: 18px;            
+    font-weight: 500 bold;      
+    margin: 5px;               
+    padding: 10px 32px;   
+    display:inline-block
+}
+/*Fin Alertas*/
+
+/*Breadcrumbs*/
+
+ul.breadcrumbs {
+    list-style: none;
+    font-size: 18px;
+}
+ul.breadcrumbs li {display: inline;}
+ul.breadcrumbs li+li::before {
+    color: black;
+    content: ">";
+ }
+ .lector_pantalla {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.breadcrumb_actual:focus, .breadcrumb_actual:hover{
+	outline:  dotted red 3px;
+}
+
+
+
+.breadcrumbs li a:focus, li a:hover, li a:active   {
+	outline:  dotted red 3px;
+	
+}
+/*Fin breadcrumbs*/
+
+/*Estilos para que el foco se vea en los enlaces, botones y se quito el subrayado de los enlace para que solo aparezca cuando el foco este en ese elemento*/
+
+a:focus, a:hover {
+    color: #ff0000;
+    outline: #ff0000 dotted 3px;
+    text-decoration: underline;
+    padding: 2px;
+}
+
+
+.boton:focus, .boton:hover {        
+    outline: #ff0000 dotted 3px;    
+    text-decoration: underline;
+
+    }
+
+
+/*Definición de clases para botones y colores de estilos de ayuda Alx*/
+
+.boton{
+    padding: .3rem .7rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: .26rem;
+    letter-spacing: .03rem;
+    font-size: 1.07rem; 
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/*fin de clases especiales para ayuda de texto*/
+
+/*carrusel*/
+
+.contenido_carrusel{
+	display:block;
+}
+.contenido_carrusel.oculto{
+	display:none;
+}
+
+.contenido_carrusel_imagen{
+	display:block;
+}
+.contenido_carrusel_imagen.oculto{
+	display:none;
+}
+.imagen_carrusel{
+	width:50%;
+}
+
+/*Fin Carrusel*/
+
+    /* Definicion de estilos para las listas */
+
+    .anillo{
+        list-style-type: circle; 
+    }
+
+    .cuadro{
+        list-style-type: square; 
+    }
+
+    .vacio{
+        list-style-type: none;
+    }
+
+    .romano-mayus{
+        list-style-type: upper-roman;
+    }
+
+    .romano-minus{
+        list-style-type: lower-roman;
+    }
+
+    .letra-mayus{
+        list-style-type: upper-latin;
+    }
+
+    .letra-minus{
+        list-style-type: lower-roman;
+    }
+
+    .decimal{
+        list-style-type: decimal-leading-zero;
+    }
+
+    .alinear{
+        list-style-position: outside;
+
+    }
+
+    .horizontal {
+        padding: 0;
+        margin: 0;
+    }
+    .horizontal li {    
+        font-size: 18px;
+        line-height: 30px;
+        height: 30px;
+    }  
+    
+    @media screen and (min-width: 757px){
+        .horizontal li{
+            height: 30px;
+            font-size: 18px;
+            line-height: 30px;
+            display: inline; 
+            padding: 15px;
+        } 
+    }    
+
+    .marcado dt{
+        font-weight: bold;
+    }
+
+
+
+
+    /* Fin de estilos de listas */
+	
+	/*::::::::::::::::ESTILO FORMS::::::::::::::*/
+    .legend_form {
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 20px;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 25px;
+        color: #333;
+    }
+
+    .fieldset_form {
+        margin-top: 5%;
+        padding: 50px; 
+        width: 100%;   
+    }
+
+
+    .form_grupo {
+        padding-bottom: 30px;
+    }
+
+    
+    .form_label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 45px;
+    }
+
+    
+
+
+    .form_control_grande{
+        display: block;
+        width: 70%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        border: 1px solid #ccc;
+        margin-left: 90px;    
+        border-radius: 4px;
+    }
+    .form_control_grande:focus, .form_control_grande:hover {
+        background-color: #fafafa;
+        border-color: rgba(82,168,236,.8);
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    }
+    
+    
+    .form_control_chico{
+        display: block;
+        width: 50%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        border: 1px solid #ccc;
+        margin-left: 90px;    
+        border-radius: 4px;
+    }
+    .form_control_chico:focus, .form_control_chico:hover {
+        background-color: #fafafa;
+        border-color: rgba(82,168,236,.8);
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    }
+
+
+    .form_control_comentario{
+        display: block;
+        width: 70%;
+        height: 100px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        border: 1px solid #ccc;
+        margin-left: 90px;    
+        border-radius: 4px;
+    }
+    .form_control_comentario:focus, .form_control_comentario:hover {
+        background-color: #fafafa;
+        border-color: rgba(82,168,236,.8);
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    }
+
+
+    .form_control_tel1 {
+        width: 10%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        border: 1px solid #ccc;
+        margin-left: 90px;    
+        text-align: left;
+        border-radius: 4px;
+    }
+    .form_control_tel1:focus, .form_control_tel1:hover {
+        border-color: rgba(82,168,236,.8);
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+        background-color: #fafafa;
+    }
+    
+
+    .form_control_tel2 {
+        width: 39%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .form_control_tel2:focus, .form_control_tel2:hover {
+        border-color: rgba(82,168,236,.8);
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+        background-color: #fafafa;
+    }
+    
+    
+    .form_control_oculto{
+        display: block;
+        width: 50%;
+        height: 40px;
+        padding: 6px 12px;
+        border: 0;
+        margin-left: 90px;    
+        color: #555;
+    }
+    .form_control_oculto:focus {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fafafa;
+        border-color: rgba(82,168,236,.8);
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    }
+    .form_control_oculto:hover{
+        border-color: rgba(82,168,236,.8);
+        background-color: #fafafa;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    }
+
+
+    fieldset.grupo_checkbox, fieldset.grupo_radio{
+        border-radius: 8px; 
+        width: 40%;
+     }
+
+    .grupo_checkbox legend, .grupo_radio legend {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        margin-left: 20px;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .grupo_checkbox label, .grupo_radio label {
+        cursor: pointer;  
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 25px;
+    }
+
+   
+
+    .form_r, .form_cb{
+        margin-bottom: 5px;
+        height: 35px;
+        width: 90%;     
+    }
+
+    .form_r:hover, .form_cb:hover{
+        background-color: #E6E6E6;
+        border: 1px #81BEF7 solid;        
+        text-decoration: underline;
+    }
+
+    .focus{
+        background-color: #E6E6E6;
+        border: 1px #81BEF7 solid;
+        height: 35px;
+        width: 90%;
+    }    
+    
+
+    /*::::::::::::::::FIN ESTILO FORMS::::::::::::::*/
+    
+
+
+
+    /*:::::::::::::INICIO INPUTS CLASES AUXILIARES::::::::::::::::::*/
+
+    
+    .form_control {
+        display: block;
+        width: 80%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-left: 50px;    
+    }
+
+           
+    .exito:hover, .exito:focus{   
+        border-color: #07dd00;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px #07dd00;
+    }
+    
+    .alerta:hover, .alerta:focus{   
+        border-color: #F2D431;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px #F2D431;
+    }
+    
+    .error:hover, .error:focus{  
+        border-color: #f00000; 
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px #f00000;
+    }
+    
+
+
+    .cb_exito label{
+        cursor: pointer;  
+        color: #07dd00;
+        margin-bottom: 5px;
+        height: 22px;
+        font-size: 1.2em;
+    }
+    .cb_exito:hover, .focus_exito{
+        background-color: #FAFAFA;
+        border: 1px #07dd00 solid;        
+        text-decoration: underline;
+        width: 40%;
+    }
+    
+
+    .cb_alerta label{
+        cursor: pointer;  
+        color: #000000;
+        margin-bottom: 5px;
+        height: 22px;
+        font-size: 1.2em;
+    }
+    .cb_alerta:hover, .focus_alerta{
+        background-color: #FAFAFA;
+        border: 1.5px #F2D431 solid;        
+        text-decoration: underline;
+        width: 40%
+    }
+    
+
+    .cb_error label{
+        cursor: pointer;  
+        color: #f00000;
+        margin-bottom: 5px;
+        height: 22px;
+        font-size: 1.2em;
+    }
+    .cb_error:hover, .focus_error{
+        background-color: #FAFAFA;
+        border: 1px #f00000 solid;        
+        text-decoration: underline;
+        width: 40%
+    }
+          
+    
+    /*:::::::::::::FIN INPUTS CLASES AUXILIARES::::::::::::::::::*/
+
+   	
+	
+
+/*Propiedades de headers responsivos*/
+	h1{
+		font-size:40px;
+	}
+	h2{
+		font-size:35px;
+	}
+	h3{
+		font-size:27px;
+	}
+	h4{
+		font-size:22px;
+	}
+	h5{
+		font-size:18px;
+	}
+	h6{
+		font-size:16px;
+	}
+
+
+	p{
+		border-radius: .26rem;
+		letter-spacing: .03rem;
+		font-size: 14px;
+		margin:1em;
+		padding:.5em;
+	}
+	.fila:after, .fila:before{
+	content: "";
+	display: block;
+	clear: both;
+	}
+	
+    .fila{
+        word-wrap:  break-word;
+    }
+    
+/*Definicion de tala sin bordes*/
+.tab_basica{
+    width: 100%;
+display: table;
+border: none;
+border-spacing: 0;
+box-sizing: inherit;
+line-height: 1.5;
+} 
+   /*Solo se usa un border debajo de la cabeza de la tabla*/
+.tab_basica thead{
+    border-bottom: 1px solid #696969;
+}
+thead tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th{
+    font-weight: bold;
+}
+td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+   
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+/*Tabla exito*/
+.tab_exito, .tab_exito *{
+border-color:#186c03 !important;
+}
+.tab_exito thead{
+background-color: #07dd00;
+color: #000;
+}
+/*Tabla peligro */
+.tab_peligro, .tab_peligro *{
+border-color:#930000 !important;
+}
+.tab_peligro thead{
+    background-color:#f00000;
+    
+}
+.tab_peligro thead th{
+ color:#fff !important;
+}
+/*Tabla alerta */
+.tab_alerta, .tab_alerta *{
+border-color:#806e09!important;
+}
+.tab_alerta thead{
+    background-color:#b99f0d ;
+   
+}
+.tab_alerta thead th{
+ color:#fff !important;
+}
+/*Tabla primaria */
+.tab_primaria, .tab_primaria *{
+border-color:#4b0a4b  !important;
+}
+.tab_primaria thead{
+   background-color: #800080;
+    }
+
+.tab_primaria thead th{
+ color:#fff !important;
+}
+/*Tabla info*/
+.tab_info, .tab_info *{
+border-color:#1739A9 !important;
+}
+.tab_info thead{
+   background-color: #a5e6ff;
+    }
+
+.tab_info thead th{
+ color:#1739A9 !important;
+}
+
+/*Hacer la tabla con bordes con la clase .tab-bordes*/
+.tab_bordes{
+ 
+   
+    border-spacing: 0;
+    border: 1px solid  #696969;
+    border-radius: 15px 15px 0 0;
+    
+}
+.tab_bordes thead th:last-child {
+    border:none;
+}
+
+.tab_bordes thead th:first-child {
+
+    border:none;
+}
+
+
+table.tab_bordes>thead>tr,table.tab_bordes>tbody>tr{
+
+    border-top:1px solid #696969;
+    border-bottom:1px solid #696969;
+    border-left:1px solid #696969;
+    border-right:1px solid #696969;
+
+}
+    .tab_bordes>tbody>tr>td,
+    .tab_bordes>tbody>tr>th, 
+    .tab_bordes>tfoot>tr>td, 
+    .tab_bordes>tfoot>tr>th, 
+    .tab_bordes>thead>tr>td, 
+    .tab_bordes>thead>tr>th {
+    border: 1px solid #696969;
+}
+
+/*Para hacer la tabla responsiva se utilizo la clase tab-responsiva*/
+@media only screen and (max-width: 750px){
+
+    .tab_bordes.tab_responsiva>tbody>tr>td,
+    .tab_bordes.tab_responsiva>tbody>tr>th, 
+    .tab_bordes.tab_responsiva>tfoot>tr>td, 
+    .tab_bordes.tab_responsiva>tfoot>tr>th, 
+    .tab_bordes.tab_responsiva>thead>tr>td, 
+    .tab_bordes.tab_responsiva>thead>tr>th {
+    border:none;
+    
+}
+
+    table.tab_responsiva
+    {width:100%;
+        border-collapse:collapse;
+        border-spacing:0;
+        display:block;
+        position:relative;
+        border-left:none;
+
+    }
+
+
+
+    table.tab_responsiva td:empty:before
+    {content:""}
+
+    table.tab_responsiva th,table.tab_responsiva td{
+        margin:0;
+        vertical-align:top;
+        
+    }
+
+
+    table.tab_responsiva th{
+        border:none;
+        text-align:left}
+
+
+    table.tab_responsiva thead{
+        display:block;
+        float:left}
+
+
+    table.tab_responsiva thead tr{
+        display:block;padding:0 10px 0 0}
+
+
+    table.tab_responsiva thead tr th::before{
+        content:""}
+
+    table.tab_responsiva tbody{
+        display:block;
+        width:auto;
+        position:relative;
+        overflow-x:auto;
+        white-space:nowrap;}
+
+    table.tab_responsiva tbody tr{
+        display:inline-block;
+        vertical-align:top;}
+
+    table.tab_responsiva th{
+        display:block;
+        text-align:left;
+        border:none;}
+
+    table.tab_responsiva td{
+        display:block;
+        min-height:1.25em;
+        text-align:left;
+        border:none;
+    }
+
+    table.tab_responsiva tr{
+        padding:0 10px;}
+
+    table.tab_responsiva thead{
+        border:none;
+        border-right:none;}
+
+
+    table.tab_responsiva.tab-bordes th{
+        border-right: none;
+        border-bottom:0;
+        border-left:0;
+    }
+
+    table.tab_responsiva.tab-bordes td{
+        border-left:none;
+        border-right:none;
+        border-bottom:none;}
+
+    table.tab_responsiva.tab-bordes tr{
+        border-top:0;}
+
+    table.tab_responsiva.tab-bordes tbody tr{
+        border-right:0;
+
+    }
+        table.tab_responsiva_compleja
+    {width:100%;
+        border-collapse:collapse;
+        border-spacing:0;
+        display:block;
+        position:relative;
+     
+
+    }
+
+    table.tab_responsiva_compleja{
+        display:block;
+        width:auto;
+        position:relative;
+        overflow-x:auto;
+        white-space:nowrap;}
+
+          
+
+}
+
+/*Paginacion*/
+
+.paginacion {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+
+  border-radius: 4px;
+
+}
+.paginacion > li {
+  display: inline-block;
+
+}
+.paginacion > li > a{
+  border: 1px solid #1739A9;
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 0.9;
+  color: #fff;
+  text-decoration: none;
+  background-color: #a5e6ff;  
+}
+
+.paginacion > li:first-child > a {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.paginacion > li:last-child > a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.paginacion > li > a:hover,
+.paginacion > li > a:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #65d3ff;
+  border-color: #1739A9;
+}
+.paginacion > .activo > a,
+.paginacion > .activo > a:hover,
+.paginacion > .activo > a:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.paginacion > .inactivo > a,
+.paginacion > .inactivo > a:hover,
+.paginacion > .inactivo > a:focus {
+  color: #000;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #337ab7;
+}
+
+/*paginacion carrusel*/
+
+.paginacion_carrusel {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.paginacion_carrusel > li {
+  display: inline-block;
+}
+.paginacion_carrusel > li > a{
+  border: 1px solid #1739A9;
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 0.9;
+  color: #000;
+  text-decoration: none;
+  background-color: #a5e6ff;  
+}
+
+.paginacion_carrusel > li:first-child > a {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.paginacion_carrusel > li:last-child > a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.paginacion_carrusel > li > a:hover,
+.paginacion > li > a:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #65d3ff;
+  border-color: #1739A9;
+}
+.paginacion_carrusel > .activo > a,
+.paginacion_carrusel > .activo > a:hover,
+.paginacion_carrusel > .activo > a:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.paginacion_carrusel > .inactivo > a,
+.paginacion_carrusel > .inactivo > a:hover,
+.paginacion_carrusel > .inactivo > a:focus {
+  color: #000;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #337ab7;
+}
+
+/*fin paginacion carrusel*/
+
+/*fin paginacion*/
+/*Alineación de párrafos*/
+.alinear_izquierda{
+	text-align: left;
+}
+.alinear_justificado{
+	text-align: justify;
+}
+.alinear_derecha{
+	text-align: right;
+}
+.alinear_centro{
+	text-align: center;
+}
+
+/***********************************************************************************************************************************
+Definición de estilo para dropdowns (Menús desplegables)
+************************************************************************************************************************************/
+.menu_desplegable_abajo,
+.menu_desplegable_arriba,
+.menu_desplegable_derecha,
+.menu_desplegable_izquierda{
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*Estilo para los botones de menú desplegable*/
+.boton_menu_desplegable{
+    margin: 0;
+    margin-left: 0;
+    background-color: #F2F2F2;
+}
+/*Definición de los sub menús desplegables*/
+.menu_desplegable {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background: white;
+    border: solid 0.5px gray;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /*Firefox*/
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /*Chrome, Safari*/
+    -o-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /*Opera*/
+    -ms-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /*Microsoft*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: -moz-min-content;
+    /*Firefox*/
+    width: -webkit-min-content;
+    /*Chrome, Safari*/
+    width: -o-min-content;
+    /*Opera*/
+    width: -ms-min-content;
+    /*Microsoft*/
+}
+
+/*Ubicación del menú que se despliega hacia abajo con alineación normal a la derecha*/
+.menu_desplegable_abajo .menu_desplegable{
+    top: 106%;
+}
+/*Ubicación del menú que se despliega hacia arriba con alineación normal a la derecha*/
+.menu_desplegable_arriba .menu_desplegable{
+    bottom: 112%;
+}
+/*Ubicación del menú que se despliega hacia la derecha*/
+.menu_desplegable_derecha .menu_desplegable{
+    left: 106%;
+}
+/*Ubicación del menú que se despliega hacia la izquierda*/
+.menu_desplegable_izquierda .menu_desplegable{
+    right: 106%;
+}
+/*Alineación a la izquierda aplicable para menús desplegables hacia arriba y hacia abajo*/
+.menu_desplegable_alineado_izquierda .menu_desplegable{
+    right: 0.1%;
+}
+/*Alineación hacia arriba aplicable para menús desplegables hacia la derecha y hacia la izquierda*/
+.menu_desplegable_alineado_arriba .menu_desplegable{
+    bottom: 0.1%;
+}
+/*Alineación hacia abajo aplicable para menús desplegables hacia la derecha y hacia la izquierda*/
+.menu_desplegable_alineado_abajo .menu_desplegable{
+    top: 0.1%;
+}
+/*Estilo para los elementos de los menús desplegables*/
+.menu_desplegable > li > a{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.5;
+    white-space: nowrap;
+    cursor: pointer;
+    cursor: hand; 
+    /*Internet explorer*/
+}
+/*Clase usada en un elemento de una lista para marcar una división entre elementos*/
+.menu_divisor{
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #ccc;
+}
+/*Clase usada en un elemento de una lista para colocar un subtitulo en la lista*/
+.menu_titulo{
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    color: gray;
+}
+/*Estilo para los elementos del menú desplegable que se han deshabilitado*/
+.menu_deshabilitado > a{
+    color: gray;
+}
+/*Estilo para los elementos del menú desplegable que se han deshabilitado*/
+.menu_deshabilitado > a:focus,
+.menu_deshabilitado > a:hover{
+    cursor: not-allowed;
+}
+/*Clase usada en un span para colocar una flecha hacia abajo*/
+.menu_flecha{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid black;
+    border-right: 4px solid transparent;
+    border-bottom: 0 dotted;
+    border-left: 4px solid transparent;
+    content: "";
+    margin-left: 0.4em;
+}
+/*Modificación de la clase menu_flecha para apuntar hacia arriba*/
+.menu_desplegable_arriba .menu_flecha{
+    border-top: 0 dotted;
+    border-bottom: 4px solid black;
+}
+/*Modificación de la clase menu_flecha para apuntar hacia la derecha*/
+.menu_desplegable_derecha .menu_flecha{
+    border-top: 4px solid transparent;
+    border-right: 0 dotted;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid black;
+}
+/*Modificación de la clase menu_flecha para apuntar hacia la izquierda*/
+.menu_desplegable_izquierda .menu_flecha{
+    border-top: 4px solid transparent;
+    border-right: 4px solid black;
+    border-bottom: 4px solid transparent;
+    border-left: 0 dotted;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0.4em;
+}
+
+/************************************************************************************************************************************
+Fin de definición de estilo para dropdowns (Menús desplegables)
+************************************************************************************************************************************/
+
+/*-----------INICIA SECCIÓN PARA NAVTAB---------*/
+
+main{
+    /*Si el nav esta en .nav_static se debe dejar por lo menos 
+    50px de margin top para que el texto del main no se corte*/
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.nav{
+    /*Esta es la clase para que no se quede estatico*/
+    left:0; 
+    top: 0;
+    width:100%;
+    height: 50px;
+    border-bottom: solid 2px;
+    background-color: #fff; 
+    margin-bottom: 30px;
+}
+.nav_static{
+    /*Esta clase hace que el navtab se quede estatico*/
+    left:0; 
+    top: 0;
+    width:100%;
+    height: 50px;
+    position:fixed;
+    border-bottom: solid 2px;
+    background-color: #fff;
+}
+
+nav > .lista_menu{
+    /*Quita todos los estilos de lista*/
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    float: right;  
+}
+.link>a, .sublink>a {
+    /*Quita todos los estilos de enlace y da formato*/
+    text-decoration: none;
+    color:#666;
+    font-size: 17px;
+
+}
+.boton_hamburguesa{/*Esta es la clase para el botón, se combina con las clases
+ b_l es para alinear el boton a la izquierda
+ b_r es para alinear el boton a la derecha*/
+    display: none;
+}
+
+.boton_hamburguesa:focus, .boton_hamburguesa:hover{  /*Selección del hamburguesa*/      
+    outline: #ff0000 dotted 3px;    
+    text-decoration: underline;
+    }
+.nav_logo:focus, .nav_logo:hover{
+     outline: #ff0000 dotted 3px;
+     padding: 0;    
+} 
+
+.lista_menu > .link{
+    /*da formatos a los elementos de las listas*/
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+
+.lista_menu::after{
+    content: "";
+    clear: both;
+    position: relative;
+    display: block;
+}
+.nav_logo{
+    margin: 3px;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+.img_logo{
+    height: 40px;
+    display: inline-block;
+    float: left;
+}
+
+
+
+
+/*----------------------NAVTAB CON PANTALLAS MENORES A 768px-------*/
+@media only screen and (max-width: 768px) { 
+/*-----------GLOSARIO DE CLASES----------
+.nav_disp_b: Despliega el menú en block, ocupan el 100% de la pagina
+.link: enlaces principales, se muestran primero
+.sublink: enlaces secundarios, se muestran despues de los principales 
+.nav_disp_r: Despliega el menú en float right, ocupan el 20% de la pagina
+.nav_disp_l: Despliega el menú en float left, ocupan el 20% de la pagina
+.b_l: coloca el menú que despliega el menú a la izquierda
+.b_r: coloca el menú que despliega el menú a la derecha
+.in-a: sirve como ayuda para restricción de que se muestre en el JQUERY;
+*/
+nav > .lista_menu{
+    /*Quita todos los estilos de lista*/
+    float: none;  
+}
+.nav_logo{
+    float: none;
+}
+/*----------Display para menú en block 100% witdth--------*/
+    .nav_disp_block > .lista_menu> .link{
+        /*Oculta todos los elementos del navtab menos el boton*/
+        display: none;
+        clear: both;
+        width: 100%;
+        border-bottom:solid 1px;
+        background-color: #fff;
+   }
+/*----------Display para menú en float right 20% witdth--------*/
+    .nav_disp_right > .lista_menu> .link {
+        display: none;
+        clear: both;
+        float: right;
+        width: 60%;
+        background-color: #fff;
+        border-bottom:solid 1px;
+    }
+/*----------Display para menú en float left 20% witdth--------*/
+    .nav_disp_left > .lista_menu> .link {
+        display: none;
+        clear: both;
+        float: left;
+        width: 60%;
+        border-bottom:solid 1px;
+        background-color: #fff;
+    }
+/*----------Boton para desplegar el menú--------*/
+    .boton_hamburguesa{
+        background-color: transparent;
+        border: none;
+        display: inline-block;
+        text-decoration: none;  
+        clear: both;
+        width: auto;
+        height: 100%;
+        padding: 10px 0 16px 0;
+        margin: 0;
+        margin-right: 10px;
+    }
+    .hamburguesa_izquierda{float: left;}/*coloca el boton a la izquierda*/
+    .hamburguesa_derecha{float: right;}/*coloca el boton a la derecha*/
+
+    .icono_boton{/*Contenido del boton, hamburguesa*/
+        background-color: #000;
+        display: block;
+        width: 30px;
+        height: 2px;
+        border-radius: 1px;
+        margin: 6px;
+    }
+}
+/*-----------TERMINA SECCIÓN PARA NAVTAB---------*/
+/*-----------IINICIA SECCIÓN PARA CALIFICACIONES---------*/
+.contenedor_calif{
+    border:solid 1px;
+    position: absolute; 
+    padding: 15px;
+}
+.radio_calif{
+    float: left;
+    display: inline;
+}
+.radio:focus, .radio:hover{  /*Selección del hamburguesa*/      
+    outline: #ff0000 dotted 3px;    
+    text-decoration: underline;
+    }
+
+.radio_label:focus, .radio_label:hover{  /*Selección del hamburguesa*/      
+    outline:  #ff0000 dotted 3px;   
+    background-color: #f2ce3d; 
+    text-decoration: underline;
+    padding: 0px;
+    }
+
+
+/*-----------TERMINA SECCIÓN PARA CALIFICACIONES--------*/
+
+/**********************
+Estilos para pestañas
+*********************/
+.pestañas {
+    
+    padding: 3%;
+    margin: 3%;
+
+
+}
+
+.pestañas li{
+    line-height: 1;
+    height: auto;
+    border:1px solid #000000;    
+    background-color: #87ceeb;
+    border-radius: 4px 4px 0 0;
+    border-bottom:0;
+    list-style:none;
+   /* box-shadow: 10px -10px 5px #888888;*/
+    cursor:pointer;
+    padding: 15px 15px 1px 15px;
+
+
+
+
+}
+.pestañas li:focus, .pestañas li:hover{
+        
+        outline: #df153a dotted 3px !Important;
+        cursor:pointer;
+
+}
+
+
+.pestañas-contenido{
+    border: 2px solid #000000;
+    border-top:0;
+    border-right: 0;
+    background-color: #ffffff;
+    padding: 2%;
+    /*box-shadow: 10px 10px 5px #888888;*/
+
+
+}
+.pestañas-contenido:focus{
+    outline: #ff0000 dotted 3px;  
+}
+
+
+/***********************************************************************************************************************************
+Inicio de definición de estilo para Tooltips
+************************************************************************************************************************************/
+.tooltip_definicion{
+    position: relative;
+    cursor: help;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip{
+    display: none;
+    position: absolute;
+    padding: 0.5em 0.7em;
+    margin: 0.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+    z-index: 1;
+}
+.tooltip_definicion:focus,
+.tooltip:focus,
+.tooltip_definicion:hover,
+.tooltip:hover{
+    outline: #ff0000 dotted 3px;    
+    text-decoration: underline;
+}
+.tooltip_activo{
+    display: block;
+}
+.tooltip_arriba{
+    bottom: 112%;
+}
+.tooltip_arriba:after{
+    position: relative;
+    display: block;
+    top: 1.1em;
+    left: 3em;
+    width: 0;
+    height: 0;
+    border-top: 8px solid black;
+    border-right: 6px solid transparent;
+    border-bottom: 0 dotted;
+    border-left: 6px solid transparent;
+    content: "";
+}
+.tooltip_abajo{
+    top: 106%;
+}
+.tooltip_abajo:before{
+    position: relative;
+    display: block;
+    bottom: 1.1em;
+    left: 3em;
+    width: 0;
+    height: 0;
+    border-top: 0 dotted;
+    border-bottom: 8px solid black;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    content: "";
+}
+.tooltip_derecha{
+    left: 101%;
+    top: -120%;
+}
+.tooltip_derecha:before{
+    position: relative;
+    display: block;
+    right: 1.3em;
+    top: 0.6em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 8px solid black;
+    border-bottom: 6px solid transparent;
+    border-left: 0 dotted;
+    content: "";
+}
+.tooltip_izquierda{
+    right: 101%;
+    bottom: -200%;
+}/*
+.tooltip_izquierda:before{
+    position: relative;
+    display: block;
+    top: 2.1em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 0 dotted;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid black;
+    content: "";
+}*/
+/***********************************************************************************************************************************
+Fin de definición de estilo para Tooltips
+************************************************************************************************************************************/
+
+/***********************************************************************************************************************************
+Inicio de definición de estilo para Transcript
+************************************************************************************************************************************/
+.contenido_transcript{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.contenido_transcript:focus{
+    outline: #ff0000 dotted 3px;    
+    text-decoration: underline;
+}
+.transcript_controles button:focus,
+.transcript_controles button:hover{
+    outline: #ff0000 dotted 3px;    
+    text-decoration: underline;
+}
+/***********************************************************************************************************************************
+Fin de definición de estilo para Transcript
+************************************************************************************************************************************/
+/***********************************************************************************************************************************
+Inicio de definición de cambio de contraste
+************************************************************************************************************************************/
+.escalaDeGrisesImagenes {
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+    background-color: #fff !Important;
+}
+
+.contrasteTextoNegro{
+    color: #000;
+    background-color: #fff;
+}
+
+.contrasteTextoBlanco{
+    color: #fff;
+    background-color: #000;
+}
+/***********************************************************************************************************************************
+Fin de definición de cambio de contraste
+************************************************************************************************************************************/
+/*Resolución xs - extra small*/
+@media screen and (min-width: 320px) and (max-width: 424px){
+	
+	/*Propiedades de heders responsivos*/
+	h1.titulo_responsivo{
+		font-size:38px;
+	}
+	h2.titulo_responsivo{
+		font-size:32px;
+	}
+	h3.titulo_responsivo{
+		font-size:28px;
+	}
+	h4.titulo_responsivo{
+		font-size:24px;
+	}
+	h5.titulo_responsivo{
+		font-size:20px;
+	}
+	h6.titulo_responsivo{
+		font-size:16px;
+	}
+	
+	/*alineacion del parrafo*/
+	
+    p{
+		font-size:18px;
+		margin:.75em 0;
+		padding:2px;
+	}
+
+    .modal{
+        width: 300px;
+        height: 400px;
+        overflow: scroll;
+    }
+	
+	
+    .columna_xs_1{
+		 box-sizing: border-box;
+        float: left;
+        width: 8.333333333333333%;
+        text-align: center; 
+    }
+    
+    .columna_xs_2{
+		 box-sizing: border-box;
+        float: left;
+        width: 16.66666666666667%;
+        text-align: center; 
+        
+    }
+    
+    .columna_xs_3{
+		 box-sizing: border-box;
+        float: left;
+        width: 25%;
+        text-align: center; 
+        
+    }
+    
+    
+    .columna_xs_4{
+		 box-sizing: border-box;
+        float: left;
+        width: 33.333333333333333%;
+        text-align: center; 
+        
+    }
+    .columna_xs_5{
+		 box-sizing: border-box;
+        float: left;
+        width: 41.66666666666667%;
+        text-align: center; 
+        
+    }    
+    .columna_xs_6{
+		 box-sizing: border-box;
+        float: left;
+        width: 50%;
+        text-align: center; 
+        
+    }
+    .columna_xs_7{
+ box-sizing: border-box;
+        float: left;
+        width: 58.333333333333333%;
+        text-align: center; 
+    }
+    
+    .columna_xs_8{
+		 box-sizing: border-box;
+        float: left;
+        width: 66.66666666666667%;
+        text-align: center; 
+        
+    }
+    
+    .columna_xs_9{
+		 box-sizing: border-box;
+        float: left;
+        width: 75%;
+        text-align: center; 
+        
+    }
+    
+    
+    .columna_xs_10{
+		 box-sizing: border-box;
+        float: left;
+        width: 83.333333333333333%;
+        text-align: center; 
+        
+    }
+    .columna_xs_11{
+		 box-sizing: border-box;
+        float: left;
+        width: 91.66666666666667%;
+        text-align: center; 
+        
+    }    
+    .columna_xs_12{
+		 box-sizing: border-box;
+        float: left;
+        width: 100%;
+        text-align: center; 
+        
+    }
+
+    /*espacio de deparacion de 1 columna*/
+    .imaginario_xs_1{
+        margin-left: 8.333333333333333%;
+    }
+    /*espacio de deparacion de 2 columnas*/
+    .imaginario_xs_2{
+        margin-left: 16.666666666666666%;
+    }
+    /*espacio de deparacion de 3 columnas*/
+    .imaginario_xs_3{
+        margin-left: 25%;
+    }
+    /*espacio de deparacion de 4 columnas*/
+    .imaginario_xs_4{
+        margin-left: 33.333333333333333%;
+    }
+    /*espacio de deparacion de 5 columnas*/
+    .imaginario_xs_5{
+        margin-left: 41.666666666666666%;
+    }
+    /*espacio de deparacion de 6 columnas*/
+    .imaginario_xs_6{
+        margin-left: 50%;
+    }
+    /*espacio de deparacion de 7 columnas*/
+    .imaginario_xs_7{
+        margin-left: 58.333333333333333%;
+    }
+    /*espacio de deparacion de 8 columnas*/
+    .imaginario_xs_8{
+        margin-left: 66.666666666666666%;
+    }
+    /*espacio de deparacion de 9 columnas*/
+    .imaginario_xs_9{
+        margin-left: 75%;
+    }
+    /*espacio de deparacion de 10 columnas*/
+    .imaginario_xs_10{
+        margin-left: 83.333333333333333%;
+    }
+    /*espacio de deparacion de 11 columnas*/
+    .imaginario_xs_11{
+        margin-left: 91.666666666666666%;
+    }
+
+}
+
+/*Resolución s - small*/
+@media screen and (min-width:425px) and (max-width: 767px){
+	
+
+	/*Propiedades de heders responsivos*/
+	h1.titulo_responsivo{
+		font-size:39px;
+	}
+	h2.titulo_responsivo{
+		font-size:33px;
+	}
+	h3.titulo_responsivo{
+		font-size:26px;
+	}
+	h4.titulo_responsivo{
+		font-size:23px;
+	}
+	h5.titulo_responsivo{
+		font-size:19px;
+	}
+	h6.titulo_responsivo{
+		font-size:17px;
+	} 	
+	
+	p{
+		font-size:14px;
+		margin:1em 0;
+		padding:.5em;
+	}
+    .modal{
+        width: 75%;
+        height: 60%;
+        overflow: scroll;
+    }
+    /*Columnas*/
+    .columna_s_1{ /*Vale el 1/12 cada uno de los números se le suma el mismo número en cada iteración (X=Xn+8.33)*/
+        width: 8.33%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_2{
+        width: 16.66%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_3{
+        width: 24.99%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_4{
+        width: 33.32%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_5{
+        width: 41.65%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_6{
+        width: 49.98%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_7{
+        width: 58.31%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_8{
+        width: 66.64%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_9{
+        width: 74.97%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_10{
+        width: 83.3%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_11{
+        width: 91.63%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+    .columna_s_12{
+        width: 99.96%;
+        display: inline-block;
+        float: left;
+        box-sizing:border-box;
+    }
+
+    /*columnas Imaginarios*/
+    .imaginario_s_1{ /*Contiene espacio correspondiente a columna-1*/
+        margin-left: 8.33%;
+    }
+    .imaginario_s_2{ /*Contiene espacio correspondiente a columna-2*/
+        margin-left: 16.66%;
+    }
+    .imaginario_s_3{ /*Contiene espacio correspondiente a columna-3*/
+        margin-left: 24.99%;
+    }
+    .imaginario_s_4{ /*Contiene espacio correspondiente a columna-4*/
+        margin-left: 33.32%;
+    }
+    .imaginario_s_5{ /*Contiene espacio correspondiente a columna-5*/
+        margin-left: 41.65%;
+    }
+    .imaginario_s_6{ /*Contiene espacio correspondiente a columna-6*/
+        margin-left: 49.98% ;
+    }
+    .imaginario_s_7{ /*Contiene espacio correspondiente a columna-7*/
+        margin-left: 58.31% ;
+    }
+    .imaginario_s_8{ /*Contiene espacio correspondiente a columna-8*/
+        margin-left: 66.64% ;
+    }
+    .imaginario_s_9{ /*Contiene espacio correspondiente a columna-9*/
+        margin-left: 74.97% ;
+    }
+    .imaginario_s_10{ /*Contiene espacio correspondiente a columna-10*/
+        margin-left: 83.3% ;
+    }
+    .imaginario_s_11{ /*Contiene espacio correspondiente a columna-11*/
+        margin-left: 91.63% ;
+    }
+}
+
+/*Resolución m - media*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	
+	
+	/*Propiedades de heders responsivos*/
+	h1.titulo_responsivo{
+		font-size:40px;
+	}
+	h2.titulo_responsivo{
+		font-size:35px;
+	}
+	h3.titulo_responsivo{
+		font-size:30px;
+	}
+	h4.titulo_responsivo{
+		font-size:27px;
+	}
+	h5.titulo_responsivo{
+		font-size:25px;
+	}
+	h6.titulo_responsivo{
+		font-size:18px;
+	} 	
+	
+	p{
+		font-size:14px;
+		margin:1em 0;
+		padding:.5em;
+	}
+
+    /*Angel: Comenten un poco su codigo*/
+    /*Generalizacion de propiedades a columnas e imaginarios.*/
+    .columna_m_1,.columna_m_2,.columna_m_3,.columna_m_4,.columna_m_5,.columna_m_6,.columna_m_7,.columna_m_8,.columna_m_9,.columna_m_10,.columna_m_11,.columna_m_2,.imaginario_m_1,.imaginario_m_2,.imaginario_m_3,.imaginario_m_4,.imaginario_m_5,.imaginario_m_6,.imaginario_m_7,.imaginario_m_8,.imaginario_m_9,.imaginario_m_10,.imaginario_m_11,.imaginario_m_12{
+        float: left;
+        position: relative;
+    }*/
+  
+    /*Asignacion del ancho a las columnas e imaginarios*/
+    .columna_m_1{
+    width: 8.333333333%;
+    box-sizing: border-box;
+    }
+    .columna_m_2{
+    width: 16.66666667%;
+    box-sizing: border-box;
+    }
+    .columna_m_3{
+    width: 25%;
+    box-sizing: border-box;
+    }
+    .columna_m_4{
+    width: 33.33333333%;
+    box-sizing: border-box;
+    }
+    .columna_m_5{
+    width: 41.66666667%;
+    box-sizing: border-box;
+    }
+    .columna_m_6{
+    width: 50%;
+    box-sizing: border-box;
+    }
+    .columna_m_7{
+    width: 58.33333333%;
+    box-sizing: border-box;
+    }
+    .columna_m_8{
+    width: 66.66666666%;
+    box-sizing: border-box;
+    }
+    .columna_m_9{
+    width: 75%;
+    box-sizing: border-box;
+    }
+    .columna_m_10{
+    width: 83.33333333%;
+    box-sizing: border-box;
+    }
+    .columna_m_11{
+    width: 91.66666666%;
+    box-sizing: border-box;
+    }
+    .columna_m_12{
+    width: 100%;
+    box-sizing: border-box;
+    }
+    .imaginario_m_1{
+    margin-left: 8.333333333%;
+    }
+    .imaginario_m_2{
+    margin-left:  16.66666667%;
+    }
+    .imaginario_m_3{
+    margin-left: 25%;
+    }
+    .imaginario_m_4{
+    margin-left: 33.33333333%;
+    }
+    .imaginario_m_5{
+    margin-left: 41.66666667%;
+    }
+    .imaginario_m_6{
+    margin-left:  50%;
+    }
+    .imaginario_m_7{
+    margin-left: 58.33333333%;
+    }
+    .imaginario_m_8{
+    margin-left: 66.66666666%;
+    }
+    .imaginario_m_9{
+    margin-left:  75%;
+    }
+    .imaginario_m_10{
+    margin-left: 83.33333333%;
+    }
+    .imaginario_m_11{
+    margin-left:  91.66666666%;
+    }
+    .imaginario_m_12{
+    margin-left:  100%;
+    }
+	
+	
+}
+
+/*Resolución l - large*/
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+   
+
+	/*Propiedades de heders responsivos*/
+	h1.titulo_responsivo{
+		font-size:45px;
+	}
+	h2.titulo_responsivo{
+		font-size:40px;
+	}
+	h3.titulo_responsivo{
+		font-size:35px;
+	}
+	h4.titulo_responsivo{
+		font-size:27px;
+	}
+	h5.titulo_responsivo{
+		font-size:22px;
+	}
+	h6.titulo_responsivo{
+		font-size:19px;
+	}   
+	
+	p{
+		font-size:15px;
+		margin:1em 0;
+		padding:10px;
+	}
+ 
+    /*propiedades de los "espacios" entre columnas*/
+    .imaginario_l_1{
+    margin-left:8.333%;
+    }
+    .imaginario_l_2{
+    margin-left:16.666%;
+    }
+    .imaginario_l_3{
+    margin-left:25%;
+    }
+    .imaginario_l_4{
+    margin-left:33.33%;
+    }
+    .imaginario_l_5{
+    margin-left:41.666%;
+    }
+    .imaginario_l_6{
+    margin-left:50%;
+    }
+    .imaginario_l_7{
+    margin-left:58.333%;
+    }
+    .imaginario_l_8{
+    margin-left:66.666%;
+    }
+    .imaginario_l_9{
+    margin-left:75%;
+    }
+    .imaginario_l_10{
+    margin-left:83.333%;
+    }
+    .imaginario_l_11{
+    margin-left:91.666%;
+    }
+/*propiedades de las columnas ; columna es el resultado de dividir la fila en 12 fragmentos y representa uno de esos fragmentos o bien un multiplo de estos.*/
+    .columna_l_1{
+      width: 8.333%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_2{
+      width: 16.666%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_3{
+      width: 25%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_4{
+      width: 33.333%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_5{
+      width: 41.666%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_6{
+      width: 50%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_7{
+      width: 58.333%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_8{
+      width: 66.666%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box; 
+    }
+    .columna_l_9{
+      width: 75%; 
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_10{
+      width: 83.333%;
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+     }
+    .columna_l_11{
+      width: 91.666%;
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+    }
+    .columna_l_12{
+      width: 100%;
+      float: left; 
+      padding:5px 8px 5px 8px;
+      box-sizing:border-box;
+     }
+}
+
+/*Resolución xl - extra large*/
+@media screen and (min-width: 1441px) and (max-width: 2560px)  {
+    
+	/*Propiedades de heders responsivos*/
+	h1.titulo_responsivo{
+		font-size:47px;
+	}
+	h2.titulo_responsivo{
+		font-size:42px;
+	}
+	h3.titulo_responsivo{
+		font-size:35px;
+	}
+	h4.titulo_responsivo{
+		font-size:30px;
+	}
+	h5.titulo_responsivo{
+		font-size:25px;
+	}
+	h6.titulo_responsivo{
+		font-size:20px;
+	} 
+	
+	p{
+		font-size:16px;
+		margin:1em 0;
+		padding:10px;
+	}
+
+    /*Cada columna representa la divison de nuestra fila en 12 partes iguales */
+    .columna_xl_1{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 8.3%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-height: 1px;
+        
+
+    }
+
+    .columna_xl_2{
+	   float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 16.6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }	
+
+    
+
+    .columna_xl_3{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 24.9%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .columna_xl_4{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px; 
+        width: 33.2%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+     .columna_xl_5{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 41.6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .columna_xl_6{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 49.8%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+     .columna_xl_7{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 58.3%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+     .columna_xl_8{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 66.6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+     .columna_xl_9{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 75%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+     .columna_xl_10{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 83.3%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+     .columna_xl_11{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 91.6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+     .columna_xl_12{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    /*los imaginarios son la delimitacion de espacio hacia la izquierda que no se va a ocupar*/
+    .imaginario_xl_1{
+        
+        margin-left: 8.3%;
+       
+    }
+    .imaginario_xl_2{
+      
+        margin-left: 16.6%;
+    
+    }
+
+    .imaginario_xl_3{
+        
+        margin-left: 24.9%;
+      
+    }
+    .imaginario_xl_4{
+       
+        margin-left: 33.2%;
+       
+    }
+    .imaginario_xl_5{
+        
+        margin-left: 41.6%;
+    }
+    .imaginario_xl_6{
+        
+        margin-left: 49.8%;
+    }
+    .imaginario_xl_7{
+        
+        margin-left: 58.3%;
+    }
+    .imaginario_xl_8{
+        
+        margin-left: 66.6%;
+    }
+    .imaginario_xl_9{
+        
+        margin-left: 75%;
+    }
+    .imaginario_xl_10{
+        
+        margin-left: 83.3%;
+    }
+    .imaginario_xl_11{
+        
+        margin-left: 91.6%;
+    }
+    .imaginario_xl_12{
+        
+        margin-left: 100%;
+    }
+    /*Angel: ¿Que pasa si quiero una columna de mas de 6 espacios? Revisar*/
+}
+
+/*......SALTO DE BLOQUE......*/
+#salto_ejemplo {
+    height:25px; 
+    width:660px; 
+    color:#999; 
+    border-right:solid 10px;
+    border-left:solid 10px;  
+  }
+  
+  
+  #salto_ejemplo strong {
+    font:normal 80%/1em Cambria, Georgia, Garamond, serif; 
+    color:#fff; 
+    text-transform:uppercase;
+  }
+  
+  #salto_ejemplo ul, #salto_ejemplo li {
+    display:inline;   
+  }
+  
+  #salto_ejemplo.activo {
+    position:static; 
+    margin:0 auto;  
+  }
+  
+  #salto_ejemplo a {
+    padding:0 3px; 
+    color:#192666;
+  }
+  
+  #salto_ejemplo a:focus {
+	color: #192666;
+    border: dashed 1px;
+    background-color: #D5EAFF; 
+    text-decoration: underline;
+  }
+
+  .menu_ejemplo_salto{
+    font-size: 16px;
+    margin-left: 5%;  
+  }
+  
+    .muestra_salto{
+    clip: initial;
+ }
+  
+
+/*...... FIN DE SALTO DE BLOQUE......*/
+
+/*Calendario*/  
+.calendario{
+    left: 100px;
+    padding: 2px;
+	text-align:center;
+
+	}
+.calendario p{
+			height: 35px;
+			padding:0;
+			margin:0;
+}
+
+.calendario  table{
+padding:0px;
+border-width: 0 0 1px 1px;
+border-style: solid;
+	font-size:10px;
+}
+
+.calendario td, th{
+
+border-width: 1px 1px 0 0;
+border-style: solid;
+padding: 3px 9px;
+
+}
+
+/*Fin Calendario*/
+
+/*INICIO CUENTA ATRAS*/
+.contador{
+	background-color:#6495ed;
+	border:solid 1px black;
+	border-radius:3px;
+	text-align:center;
+}
+.abrir_alerta{
+	visibility:hidden;
+}
+/*FIN CUENTA ATRAS*/
+
+/******** Validacion Formulario******/
+
+		.link_error{
+			color: #337ab7;
+    		
+		}
+

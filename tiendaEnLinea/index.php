@@ -18,8 +18,8 @@ include 'conexion.php';
 				
 				<ul class="lista_menu">
 		            <li class="link"><a href="" aria-label="Pagina de inicio">Inicio</a></li>
-					<li class="link"><a href="formulariocomprarplayera.html" aria-label="Pagina de CSS">Registro productos</a></li>
-		            <li class="link"><a href="formularios.html" aria-label="Pagina de componentes">Registrar usuario</a></li>
+					<li class="link"><a href="" aria-label="Pagina de CSS">CSS</a></li>
+		            <li class="link"><a href="" aria-label="Pagina de componentes">Componentes</a></li>
 				</ul>
 			</nav>
 	</header>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Formulario... </title>
+    <script type="text/javascript" src="JS/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript" src="JS/valida_contrasenia.js"></script>
+    <script type="text/javascript" src="JS/generausuario.js"></script>
+    <script type="text/javascript" src="JS/animacion.js"></script>
+    <script src="JS/jquery.validate.min.js"></script>
+    <script src="JS/mensajes.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="CSS/estilo.css">
+   <!-- <link rel="stylesheet" href=""> -->
+    <script>
+    $(document).ready(function(){
+        
+        $("#formula").validate()
+    })
+    
+    </script>
+</head>
+<body>
+<div class="contenedor_formulario">
+    <div class="toggle">
+        <span>Crear Cuenta</span>
+    </div>
+    <div class="formulario">
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar Sesión">
+            
+        </form>
+    </div>
+    <div class="formulario">
+        <h2>Crear Cuenta</h2>
+        <form action="guardausuario.php" method="post" id="formula">
+            <input type="text" placeholder="Nombre(s)" name="nombre" id="nombre" required autocomplete="off" onkeyup="copiar()" pattern="[A-Za-z]" title="no incluir acentos">
+            <input type="text" placeholder="Apellido Paterno" name="apellidoP" id="apellidoP" required autocomplete="off" onkeyup="copiar()">
+            <input type="text" placeholder="Apellido Materno" name="apellidoM" id="apellidoM" required autocomplete="off" onkeyup="copiar()">
+            <input type="text" placeholder="Calle" required autocomplete="off" name="calle" id="calle"> 
+            <input type="text" placeholder="Número Int." class="digits" required autocomplete="off" maxlength="6" name="numint" id="numint">
+            <input type="text" placeholder="Número Ext." class="digits" required autocomplete="off" maxlength="6" name="numext" id="numext">
+            <input type="text" placeholder="Colonia" required autocomplete="off" name="colonia" id="colonia">
+            <input type="text" placeholder="Código Postal" class="digits" required autocomplete="off" maxlength="5" name="cp" id="cp">
+            <input type="text" placeholder="Teléfono" name="telefono"  class="digits" id="telefono" required autocomplete="off" maxlength="10">
+            <select id="delegaciones" placeholder="Delegación" required name="delegaciones">
+                <option disabled selected>Seleccione la delegación</option>
+                <option value="1">Álvaro Obregón</option>
+                <option value="2">Azcapotzalco</option>
+                <option value="3">Benito Juárez</option>
+                <option value="4">Coyoacán</option>
+                <option value="5">Cuajimalpa de Morelos</option>
+                <option value="6">Cuauhtémoc</option>
+                <option value="7">Gustavo A. Madero</option>
+                <option value="8">Iztacalco</option>
+                <option value="9">Iztapalapa</option>
+                <option value="10">Magdalena Contreras</option>
+                <option value="11">Miguel Hidalgo</option>
+                <option value="12">Milpa Alta</option>
+                <option value="13">Tláhuac</option>
+                <option value="14">Tlalpan</option>
+                <option value="15">Venustiano Carranza</option>
+                <option value="16">Xochimilco</option>
+                </select>
+            <input type="email" placeholder="Correo Electrónico" name="email" id="email" class="email" required autocomplete="off">
+            <input type="text" placeholder="Usuario"  name="usuario" id="usuario" required readonly pattern="[A-Za-z]">
+            <input type="password" placeholder="Contraseña" name="contrasenia" id="contrasenia" maxlength="16"  required >
+            <input type="password" placeholder="Confirmar Contraseña" name="confirma_contrasenia" maxlength="16"  id="confirma_contrasenia" required>
+            <span id="error"></span>
+            <input type="submit" value="Registrarse" id="btn">
+            
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>
