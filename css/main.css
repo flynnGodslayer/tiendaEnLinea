@@ -1,3 +1,43 @@
+/*************************************************************
+CSS modificado
+*************************************************************/
+.imagen_carrusel{
+     width: 120px;
+    height: 263px;
+}
+
+article.playera{
+    border: 1px solid grey;
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+.playera>img{
+    width: 120px;
+    height: 120px;
+}
+.playera>p{
+    font-weight: bold;
+}
+.page_header nav{
+    background-color: #fff;
+}
+.page_header a{
+    color:#1F87BC;
+}
+a:hover, a:focus{
+    background-color: white;
+    text-decoration: underline;
+    color:#1F87BC !important;
+    border-bottom: solid 1px #1F87BC ;
+}
+.filtro{
+    width: 20%;
+    float: left;
+    content: "";
+    margin-right: 2px;
+}
+
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                         Framework accesible UNAM
